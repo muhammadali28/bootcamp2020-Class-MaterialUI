@@ -2,6 +2,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import {Paper,TextField, Button} from '@material-ui/core';
 import AppBar from './appbar';
 import { lightBlue } from '@material-ui/core/colors';
+import GroupedBar from './barchart';
+import PieChart from './pie';
+
 const useStyles = makeStyles((theme) => ({
  
   paper: {
@@ -23,7 +26,7 @@ const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <AppBar/>
+      {/*<AppBar/>
       <Paper elevation={3} className={classes.paper}>
           <h1>Login</h1>
         <form noValidat autoComplete="off">
@@ -31,11 +34,15 @@ const classes = useStyles();
             <br />
             <TextField  label="Enter Password" variant="outlined" className={classes.input}/>
         </form>
-        <Button variant="contained"        color="primary" className={classes. input}>
+        <Button variant="contained" color="primary" className={classes.input}>
               login
         </Button>
-      </Paper>  
-    </div>  
+      </Paper>
+      */ }
+      < GroupedBar />
+      <br />
+      < PieChart />
+    </ div>  
   );
 }
 
